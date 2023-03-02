@@ -137,6 +137,9 @@
         width: 100%;
         height: 100;
     }
+    .texto{
+        padding: 30px 30px;
+    }
 
     /* PROJETOS */
 
@@ -149,9 +152,9 @@
         padding: 1;
     }
 
-    .coluna {
-        height: 600px;
-        width: auto;
+    .conhecimentos ul li{
+        padding: 4px;
+        margin: 15px;
     }
 }
 
@@ -172,20 +175,34 @@
         padding: 10px;
         font-size: 25px;
     }
+
+    /* CONHECIMENTOS */
+
+    .habilidades{
+        height: 700px;
+    }
+    .conhecimentos ul li{
+        padding: 3px;
+        margin: 12px;
+    }
 }
 
-@media(max-width: 600px) {
+
+@media(max-width: 650px) {
     /* HABILIDADES */
 
     .habilidades {
         position: relative;
-        height: auto;
     }
 
     .conhecimentos ul li {
-        margin: 13px;
-        padding: 10px;
-        font-size: 1.2rem;
+        margin: 10px;
+        padding: 2px;
+        font-size: 1.5rem;
+    }
+
+    .info{
+        padding-top: 40px;
     }
 }
 
@@ -227,7 +244,7 @@
     }
 
     .sobre-mim .coluna-direita {
-        padding: 30px 0;
+        padding: 30px 0px;
     }
 
     .sobre-mim .coluna-direita p {
@@ -237,7 +254,7 @@
     /* PROJETOS */
 
     .projetos {
-        height: auto;
+        /* height: auto; */
         padding: 30px 0px;
     }
 
@@ -256,6 +273,10 @@
         padding: 30px 30px;
     }
 
+    /* .coluna{
+        height: auto;
+    } */
+
     .habilidades .conhecimentos {
         padding: 0;
     }
@@ -266,12 +287,16 @@
         font-size: 1.5rem;
     }
 
+    .info{
+        padding-top: 25px;
+    }
+
     /* PROJETOS */
 
-    .content {
+    /* .content {
         height: 250px;
         width: 400px;
-    }
+    } */
 
     /* CONTATO */
 
