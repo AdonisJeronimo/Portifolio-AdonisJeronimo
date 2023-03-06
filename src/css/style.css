@@ -359,29 +359,29 @@ body h2,
 }
 
 #projeto1 {
-    background: url(/src/images/gif-projeto1.gif) center center no-repeat;
+    background: url("/src/images/gif-projeto1.gif") center center no-repeat;
     background-size: auto 100%;
 }
 
-#projeto2 {
-    background: url(/src/images/5-Projeto3.png) center center no-repeat;
+/* #projeto2 {
+    background: url("/src/images/5-Projeto3.png") center center no-repeat;
     background-size: auto 100%;
 }
 
 #projeto3 {
-    background: url(/src/images/7-Projeto4.png) center center no-repeat;
+    background: url("/src/images/7-Projeto4.png") center center no-repeat;
     background-size: auto 100%;
 }
 
 #projeto4 {
-    background: url(/src/images/3-Projeto2.png) center center no-repeat;
+    background: url("/src/images/3-Projeto2.png") center center no-repeat;
     background-size: auto 100%;
 }
 
 #projeto5 {
-    background: url(/src/images/5-Projeto3.png) center center no-repeat;
+    background: url("/src/images/5-Projeto3.png") center center no-repeat;
     background-size: auto 100%;
-}
+} */
 
 #projeto1 .label,
 #projeto2 .label,
