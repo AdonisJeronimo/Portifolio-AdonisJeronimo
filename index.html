@@ -26,10 +26,10 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="cabecalho-container">
+    <header class="header">
+        <div class="header-container">
             <a href="#">
-                <h1 class="logo">AJ</h1>
+                <h1 class="soon">AJ</h1>
             </a>
             <nav>
                 <input type="checkbox" id="menu-hamburguer">
@@ -39,83 +39,132 @@
                     </div>
                 </label>
                 <ul>
-                    <li><a href="#sobre-mim">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#about-me">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="limitador"></div>
+        <div class="limiting"></div>
     </header>
 
     <main>
         <section data-text="Adonis Jeronimo" class="hero" id="hero">
             <h2>Adonis Jeronimo</h2>
-            <div class="limitador"></div>
+            <div class="limiting"></div>
         </section>
 
-        <section class="sobre-mim" id="sobre-mim">
-            <div class="coluna-esquerda">
+        <section class="about-me" id="about-me">
+            <div class="left-column">
                 <h2>AJ</h2>
-                <div class="limitador"></div>
+                <div class="limiting"></div>
             </div>
-            <div class="coluna-direita">
-                <div class="titulo">
+            <div class="right-column">
+                <div class="title">
                     <h2>Sobre mim</h2>
                 </div>
-                <div class="texto">
-                    <p>Sou Adonis Jerônimo, moro na capital paulista e sou formado em Design Gráfico pela Universidade
-                        Cruzeiro do Sul e estou buscando por uma vaga no mercado de desenvolvimento como Front-End
+                <div class="description">
+                    <p>Olá! Me chamo Adonis e moro na capital paulista, sou formado em Design Gráfico pela Universidade
+                        Cruzeiro do Sul e busco por uma vaga no mercado de trabalho como desenvolvedor Front-End
                         Junior.</p>
-                    <p>Possuo conhecimentos em HTML, CSS e Javascript, também tenho habilidades com o
-                        framework Bulma e versionamento de código através do Git. Como sempre estou de olho no mercado,
-                        estudo constantemente para me aprimorar e busco por novas ferramentas e habilidades conforme
+                    <p>Possuo conhecimentos em HTML, CSS e Javascript, também tendo habilidades com os
+                        frameworks Bulma e React e também sei fazer versionamento de código através do Git. Como sempre
+                        estou de olho no mercado,
+                        estudo constantemente para aprimorar minhas habilidades e busco sempre por novas ferramentas e
+                        tecnoligias conforme as
                         minhas necessidades e as do mercado.</p>
                     <p>Recentemente iniciei estudos da lingua inglesa. </p>
                 </div>
             </div>
-            <div class="limitador"></div>
+            <div class="limiting"></div>
         </section>
 
-        <section class="projetos" id="projetos">
-            <div class="titulo">
-                <h2>Projetos</h2>
-            </div>
-            <div class="coluna-esquerda">
-                <div class="lista-projetos">
-                    <ul>
-                        <li> <input type="radio" name="nome-projetos" id="projeto1" checked>
-                            <label for="projeto1">Projeto 1</label>
-                        </li>
-                        <li><input type="radio" name="nome-projetos" id="projeto2">
-                            <label for="projeto2">Projeto 2</label>
-                        </li>
-                        <li> <input type="radio" name="nome-projetos" id="projeto3">
-                            <label for="projeto3">Projeto 3</label>
-                        </li>
-                        <li><input type="radio" name="nome-projetos" id="projeto4">
-                            <label for="projeto4">Projeto 4</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-           <div class="coluna-direita">
-            <a href="https://scintillating-pithivier-4a364d.netlify.app/" target="_blank"><img src="./src/images/gif-projeto1.gif"></a>
-           </div>
-
-
-            <div class="limitador"></div>
-        </section>
-
-        <section class="habilidades" id="habilidades">
-            <div class="coluna">
+        <section class="projects" id="projects">
+            <div class="title">
                 <h2>Habilidades</h2>
+            </div>
+            <div class="content">
+                <div class="options">
+                    <div class="option active" id="projeto1">
+                        <div class="shadow">
+                            <div class="label">
+                                <div class="icon">
+                                    <span>1</span>
+                                </div>
+                                <div class="information">
+                                    <a href="https://scintillating-pithivier-4a364d.netlify.app/"
+                                        target="_blank">Projeto 1</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="option" id="projeto2">
+                        <div class="shadow">
+                            <div class="label">
+                                <div class="icon">
+                                    <span>2</span>
+                                </div>
+                                <div class="information">
+                                    <a href="#" target="_blank">Projeto 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="option" id="projeto3">
+                        <div class="shadow">
+                            <div class="label">
+                                <div class="icon">
+                                    <span>3</span>
+                                </div>
+                                <div class="information">
+                                    <a href="#" target="_blank">Projeto 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="option" id="projeto4">
+                        <div class="shadow">
+                            <div class="label">
+                                <div class="icon">
+                                    <span>4</span>
+                                </div>
+                                <div class="information">
+                                    <a href="#" target="_blank">Projeto 4</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="option" id="projeto5">
+                        <div class="shadow">
+                            <div class="label">
+                                <div class="icon">
+                                    <span>5</span>
+                                </div>
+                                <div class="information">
+                                    <a href="#" target="_blank">Projeto 5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="limiting"></div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="coluna">
+                <div class="title">
+                    <h2>Habilidades</h2>
+                </div>
                 <p>Em busca de evoluir constantemente, estou sempre atento ao mercado e as áreas relacionadas a
                     tecnologia, regularmente estudo as habilidades que possuo para que não se tornem irrelevantes ou ate
                     mesmo para aprender novos conceitos e formas de uso e/ou aplicações, além disso, devido as grandes e
                     pequenas metamorfoses tecnológicas, procurar por novas habilidades é algo imprescindível. </p>
-                <div class="conhecimentos">
+                <div class="knowledge">
                     <ul>
                         <li class="r1">HTML 5</li>
                         <li class="r1">CSS 3</li>
@@ -125,7 +174,7 @@
                         <li class="r3">jQuery</li>
                         <li class="r2">Bulma</li>
                         <li class="r2">Bootstrap</li>
-                        <li class="r2">React.js</li>
+                        <li class="r1">React.js</li>
                         <li class="r3">Node.js</li>
                         <li class="r3">Vue.js</li>
                         <li class="r3">Angular</li>
@@ -140,11 +189,6 @@
                         <li class="r2">Usabilidade</li>
                         <li class="r2">Acessibilidade</li>
                         <li class="r2">Design Responsivo</li>
-                        <!-- <li class="r1">Design Gráfico</li>
-                        <li class="r1">Corel Drawn</li>
-                        <li class="r2">Lightroom</li>
-                        <li class="r2">Illustrator</li> -->
-                        <!-- <li class="r1">Photoshop</li> -->
                         <li class="r1">Testes automatizados</li>
                         <li class="r1">Front-End</li>
                         <li class="r2">Back-End</li>
@@ -153,7 +197,7 @@
                         <li class="r3">SEO</li>
                         <li class="r2">Inglês</li>
                     </ul>
-                    <div class="info">
+                    <div class="indicator">
                         <ul>
                             <li class="r1">Conhecimento</li>
                             <li class="r2">Estudos em andamento</li>
@@ -162,11 +206,11 @@
                     </div>
                 </div>
             </div>
-            <div class="limitador"></div>
+            <div class="limiting"></div>
         </section>
 
-        <section class="contato" id="contato">
-            <div class="titulo">
+        <section class="contact" id="contact">
+            <div class="title">
                 <h2>Contato</h2>
             </div>
             <ul>
@@ -210,14 +254,14 @@
         </section>
     </main>
 
-    <footer class="rodape">
-        <div class="limitador"></div>
-        <a href="index.html" class="logo"></a>
+    <footer class="baseboard">
+        <div class="limiting"></div>
+        <a href="index.html" class="soon"></a>
         <ul>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contato</a></li>
         </ul>
 
         <div class="email">
@@ -228,9 +272,11 @@
             </div>
     </footer>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
         integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="./src/js/index.js"></script>
 </body>
 
 </html>

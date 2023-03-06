@@ -1,6 +1,6 @@
 /* MENU */
 
-.cabecalho .menu {
+.header .menu {
     display: none;
     width: 60px;
     height: 60px;
@@ -8,12 +8,12 @@
 }
 
 
-.cabecalho nav label {
+.header nav label {
     display: flex;
     flex-direction: column;
 }
 
-.cabecalho .hamburguer {
+.header .hamburguer {
     background-color: #fff;
     position: relative;
     display: block;
@@ -24,8 +24,8 @@
     transition: 0.5s ease-in-out;
 }
 
-.cabecalho .hamburguer:before,
-.cabecalho .hamburguer::after {
+.header .hamburguer:before,
+.header .hamburguer::after {
     background-color: #fff;
     content: "";
     position: absolute;
@@ -35,30 +35,30 @@
     transition: 0.2s ease-in-out;
 }
 
-.cabecalho .hamburguer:before {
+.header .hamburguer:before {
     top: -10px;
 }
 
-.cabecalho .hamburguer::after {
+.header .hamburguer::after {
     bottom: -10px;
 }
 
-.cabecalho input {
+.header input {
     display: none;
 }
 
-.cabecalho input:checked~label .hamburguer {
+.header input:checked~label .hamburguer {
     transform: rotate(45deg);
     transition: 0.8s ease-in-out;
 }
 
-.cabecalho input:checked~label .hamburguer::before {
+.header input:checked~label .hamburguer::before {
     transform: rotate(90deg);
     top: 0;
     transition: 0.8s ease-in-out;
 }
 
-.cabecalho input:checked~label .hamburguer::after {
+.header input:checked~label .hamburguer::after {
     transform: rotate(-90deg);
     bottom: 0;
     transition: 0.8s ease-in-out;
@@ -80,26 +80,26 @@
 @media(max-width: 960px) {
     /* MENU */
 
-    .cabecalho .menu {
+    .header .menu {
         display: block;
     }
 
-    .cabecalho nav ul {
+    .header nav ul {
         display: none;
     }
 
-    .cabecalho input:checked~ul {
+    .header input:checked~ul {
         display: block;
     }
 
-    .cabecalho nav {
+    .header nav {
         position: absolute;
         right: 0;
         top: 10px;
         z-index: 1;
     }
 
-    .cabecalho nav ul {
+    .header nav ul {
         width: 200px;
         background-color: #fff;
         padding: 20px;
@@ -107,12 +107,12 @@
         border-radius: 20px;
     }
 
-    .cabecalho nav ul li {
+    .header nav ul li {
         padding: 0;
         padding-bottom: 5px;
     }
 
-    .cabecalho nav ul a {
+    .header nav ul a {
         /* font-size: 2rem; */
         text-align: center;
         padding: 20px;
@@ -121,38 +121,48 @@
 
     /* SOBRE */
 
-    .sobre-mim {
+    .about-me {
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
     }
 
-    .coluna-direita {
+    .right-column {
         width: 100%;
     }
 
 
-    .coluna-esquerda {
+    .left-column {
         width: 100%;
         height: 100;
     }
-    .texto{
+
+    .description{
         padding: 30px 30px;
     }
 
-    /* PROJETOS */
+    /* projects */
 
-    /* HABILIDADES */
 
-    .habilidades {
+
+
+
+
+
+
+
+
+    /* skills */
+
+    .skills {
         position: relative;
         height: auto;
         width: 100%;
         padding: 1;
     }
 
-    .conhecimentos ul li{
+    .knowledge ul li {
         padding: 4px;
         margin: 15px;
     }
@@ -169,42 +179,96 @@
         font-size: 90px;
     }
 
-    /* PROJETOS */
+    /* projects */
 
-    .lista-projetos label {
+    .lista-projects label {
         padding: 10px;
         font-size: 25px;
     }
 
-    /* CONHECIMENTOS */
+    /* knowledge */
 
-    .habilidades{
+    .skills {
         height: 700px;
     }
-    .conhecimentos ul li{
+
+    .knowledge ul li {
         padding: 3px;
         margin: 12px;
     }
 }
 
 
-@media(max-width: 650px) {
-    /* HABILIDADES */
+@media screen and (max-width: 700px) {
+    .projects {
+        height: auto;
 
-    .habilidades {
+    }
+
+    .content {
+        height: auto;
+        width: auto;
+
+    }
+
+    .content .options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #projeto1,
+    #projeto2,
+    #projeto3,
+    #projeto4,
+    #projeto5 {
+        background-size: 150%;
+    }
+
+    .content .options .option {
+        height: 50px;
+        width: 400px;
+        background-size: 500% 0;
+
+    }
+
+    .content .options .option.active {
+        height: 300px;
+        width: 450px;
+        background-size: 200%;
+    }
+    
+    #projeto1:not(.active) .label,
+#projeto2:not(.active) .label,
+#projeto3:not(.active) .label,
+#projeto4:not(.active) .label,
+#projeto5:not(.active) .label {
+    bottom: 5px;
+    left: 10px;
+
+}
+}
+
+@media(max-width: 650px) {
+    /* skills */
+
+    .skills {
         position: relative;
     }
 
-    .conhecimentos ul li {
+    .knowledge ul li {
         margin: 10px;
         padding: 2px;
         font-size: 1.5rem;
     }
 
-    .info{
+    .indicator {
         padding-top: 40px;
     }
 }
+
+
 
 @media(max-width: 550px) {
 
@@ -213,13 +277,13 @@
         display: none;
     }
 
-    /* SOBRE-MIM */
+    /* about-me */
 
-    .sobre-mim .coluna-esquerda {
+    .about-me .left-column {
         height: 680px;
     }
 
-    .sobre-mim .coluna-esquerda::after {
+    .about-me .left-column::after {
         content: url(../images/seta_preta.png);
         position: absolute;
         height: 50px;
@@ -239,36 +303,33 @@
         }
     }
 
-    .sobre-mim .coluna-esquerda .limitador {
+    .about-me .left-column .limitador {
         display: block;
     }
 
-    .sobre-mim .coluna-direita {
+    .about-me .right-column {
         padding: 30px 0px;
     }
 
-    .sobre-mim .coluna-direita p {
+    .about-me .right-column p {
         padding: 30px 0px;
     }
 
-    /* PROJETOS */
+    /* projects */
 
-    .projetos {
-        /* height: auto; */
-        padding: 30px 0px;
+    .content .options .option {
+        height: 50px;
+        width: 250px;
     }
 
-    .lista-projetos {
-        width: 358px;
-        text-align: center;
+    .content .options .option.active {
+        height: 200px;
+        width: 300px;
     }
 
-    .lista-projetos label {
-        font-size: 20px;
-    }
 
-    /* HABILIDADES */
-    .habilidades {
+    /* skills */
+    .skills {
         height: auto;
         padding: 30px 30px;
     }
@@ -277,32 +338,45 @@
         height: auto;
     } */
 
-    .habilidades .conhecimentos {
+    .skills .knowledge {
         padding: 0;
     }
 
-    .conhecimentos ul li {
+    .knowledge ul li {
         margin: 5px;
         padding: 5px;
         font-size: 1.5rem;
     }
 
-    .info{
+    .indicator {
         padding-top: 25px;
     }
 
-    /* PROJETOS */
+    /* projects */
 
-    /* .content {
-        height: 250px;
-        width: 400px;
-    } */
 
-    /* CONTATO */
+    /* contact */
 
-    .contato ul li {
+    .contact ul li {
         width: 100px;
         height: 100px;
         margin: 0 25px;
     }
+}
+
+@media screen and (max-width: 350px) {
+    .content .options .option {
+        height: 50px;
+        width: 200px;
+        min-height: 50px;
+        min-width: 200px;
+    }
+
+    .content .options .option.active {
+        height: 200px;
+        width: 250px;
+        min-height: 200px;
+        min-width: 250px;
+    }
+
 }
