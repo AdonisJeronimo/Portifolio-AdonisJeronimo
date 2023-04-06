@@ -7,7 +7,6 @@
     align-self: flex-end;
 }
 
-
 .header nav label {
     display: flex;
     flex-direction: column;
@@ -64,9 +63,7 @@
     transition: 0.8s ease-in-out;
 }
 
-
 @media(max-width: 1060px) {
-
     /* HERO */
     .hero::before {
         font-size: 100px;
@@ -120,7 +117,6 @@
     }
 
     /* SOBRE */
-
     .about-me {
         display: flex;
         flex-direction: column;
@@ -138,20 +134,9 @@
         height: 100;
     }
 
-    .description{
+    .description {
         padding: 30px 30px;
     }
-
-    /* projects */
-
-
-
-
-
-
-
-
-
 
     /* skills */
 
@@ -169,7 +154,6 @@
 }
 
 @media(max-width: 750px) {
-
     /* HERO */
     .hero::before {
         font-size: 90px;
@@ -180,14 +164,12 @@
     }
 
     /* projects */
-
     .lista-projects label {
         padding: 10px;
         font-size: 25px;
     }
 
     /* knowledge */
-
     .skills {
         height: 700px;
     }
@@ -198,17 +180,15 @@
     }
 }
 
-
 @media screen and (max-width: 700px) {
+    /*projects*/
     .projects {
         height: auto;
-
     }
 
     .content {
         height: auto;
         width: auto;
-
     }
 
     .content .options {
@@ -216,13 +196,14 @@
         justify-content: center;
         align-items: center;
         height: auto;
+        padding-bottom: 30px;
     }
 
-    #projeto1,
-    #projeto2,
-    #projeto3,
-    #projeto4,
-    #projeto5 {
+    #work1,
+    #work2,
+    #work3,
+    #work4,
+    #work5 {
         background-size: 150%;
     }
 
@@ -230,7 +211,6 @@
         height: 50px;
         width: 400px;
         background-size: 500% 0;
-
     }
 
     .content .options .option.active {
@@ -238,21 +218,19 @@
         width: 450px;
         background-size: 200%;
     }
-    
-    #projeto1:not(.active) .label,
-#projeto2:not(.active) .label,
-#projeto3:not(.active) .label,
-#projeto4:not(.active) .label,
-#projeto5:not(.active) .label {
-    bottom: 5px;
-    left: 10px;
 
-}
+    #work1:not(.active) .label,
+    #work2:not(.active) .label,
+    #work3:not(.active) .label,
+    #work4:not(.active) .label,
+    #work5:not(.active) .label {
+        bottom: 5px;
+        left: 10px;
+    }
 }
 
 @media(max-width: 650px) {
     /* skills */
-
     .skills {
         position: relative;
     }
@@ -268,17 +246,13 @@
     }
 }
 
-
-
 @media(max-width: 550px) {
-
     /* HERO */
     .hero {
         display: none;
     }
 
     /* about-me */
-
     .about-me .left-column {
         height: 680px;
     }
@@ -316,7 +290,6 @@
     }
 
     /* projects */
-
     .content .options .option {
         height: 50px;
         width: 250px;
@@ -327,16 +300,11 @@
         width: 300px;
     }
 
-
     /* skills */
     .skills {
         height: auto;
         padding: 30px 30px;
     }
-
-    /* .coluna{
-        height: auto;
-    } */
 
     .skills .knowledge {
         padding: 0;
@@ -352,11 +320,7 @@
         padding-top: 25px;
     }
 
-    /* projects */
-
-
     /* contact */
-
     .contact ul li {
         width: 100px;
         height: 100px;
@@ -365,6 +329,7 @@
 }
 
 @media screen and (max-width: 350px) {
+    /*projects*/
     .content .options .option {
         height: 50px;
         width: 200px;
@@ -378,5 +343,4 @@
         min-height: 200px;
         min-width: 250px;
     }
-
 }
